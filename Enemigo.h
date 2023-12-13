@@ -17,4 +17,5 @@ public:
     Enemigo() : Objetivo("Assets/enemigo1Vent.png", "Assets/enemigo2Vent.png","Assets/enemigo2Puer.png",
                 { {243, 143}, {788, 143}, {212, 394}, {802, 394},{512,411} }) {}
 
+
 };
