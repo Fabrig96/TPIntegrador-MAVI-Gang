@@ -1,4 +1,4 @@
-//MAVI - TP Integrador
+//MAVI - TP Integrador - Fabrizio Aguilar
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include "Game.h"

@@ -99,14 +99,14 @@ private:
         if (!sistemPuntaje->gameOver()) {
             if (objetivoVisible) {
                 if (enemigo->enLimites(crosshairPos.x, crosshairPos.y)) {
-                    cout << "Disparo a objetivo exito" << endl;
+                    cout << "Disparo a a enemigo con exito" << endl;
                     sistemPuntaje->disparoEfectivo();
                     resetTimer();
                 }           
             }
             else {
                 if (inocente->enLimites(crosshairPos.x, crosshairPos.y)) {
-                    cout << "Error: le Diste a un Inocente" << endl;            
+                    cout << "Le diste a un inocente" << endl;            
                     sistemPuntaje->disparoFallido();
                     resetTimer();
                 }
@@ -115,7 +115,7 @@ private:
     }
 
     //Metodo que resetea el tiempo de aparicion de objetivos
-    //Eleccion de objetivo de forma aleatoria(Enemigo/inocente)
+    //Eleccion de objetivo y posicion de manera aleatoria(Enemigo/inocente)
     void resetTimer() {
         timer = timerMax;
         objetivoVisible = rand() % 2 == 0; 
